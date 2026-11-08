@@ -1,0 +1,40 @@
+KESTRELTECH SERVIS TOOLKIT - UPUTSTVO ZA TESTERE
+================================================
+
+Hvala sto testiras! Alat je namijenjen serviserima racunara (Windows 10/11).
+
+PRIJE POKRETANJA
+  1. Desni klik na ZIP > Properties > oznaci "Unblock" > OK, pa tek onda raspakuj.
+  2. Pokreni Pokreni-Servis.bat (trazi Administrator prava).
+  3. Ako Windows SmartScreen pita: "More info" > "Run anyway".
+  4. Testiraj prvo na SVOM racunaru, ne na tudjem.
+
+STA DA PROBAS (redom)
+  [ ] Pokretanje - prozor se vidi cijeli, vide se dugmad za minimize/zatvori
+  [ ] Kartice gore - model, procesor, disk, stanje
+  [ ] Mjeraci LIVE TELEMETRIJA - CPU, RAM, temperature se mijenjaju
+  [ ] Brzi pregled sistema
+  [ ] Zdravlje diskova
+  [ ] Temperature i stres test (stres test pusti 1-2 min pa Zaustavi)
+  [ ] Instalirani programi - da li vidi SVE programe (uporedi sa Settings > Apps)
+  [ ] Programi pri pokretanju - iskljuci jedan nebitan program, pa ga ukljuci nazad
+  [ ] Uklanjanje bloatware-a - SAMO pogledaj listu, nista ne uklanjaj ako ne zelis
+  [ ] Ciscenje sistema
+  [ ] Mreza > Dijagnostika
+  [ ] Radni nalog - dodaj 2-3 stavke, sacuvaj
+  [ ] Izvjestaj za klijenta (PDF) - da li se otvori PDF i kako izgleda
+  [ ] Provjeri azuriranje
+
+NE MORAS (mijenjaju sistem ili traju dugo)
+  Popravka sistema (DISM/SFC), CHKDSK popravka, Reset Windows Update, potpuni reset mreze,
+  Domena, BitLocker pauza, deinstalacija programa.
+
+KAD NADJES GRESKU
+  1. U alatu: O ALATU > Prijavi gresku
+  2. Opisi sta si kliknuo, sta si ocekivao i sta se desilo.
+  3. Alat napravi ZIP (u folderu BugReports) - posalji ga autoru.
+     ZIP ne sadrzi lozinke, kljuceve ni podatke klijenata.
+  Screenshot uz prijavu uvijek pomaze (Win + Shift + S).
+
+POVRATNA INFORMACIJA
+  Sta ti je bilo nejasno, sta fali, sta bi koristio u svom servisu?

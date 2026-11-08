@@ -1,0 +1,2 @@
+Raspakuj ovdje LibreHardwareMonitor (github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases - LibreHardwareMonitor.zip).
+Alat sam pronalazi LibreHardwareMonitorLib.dll.

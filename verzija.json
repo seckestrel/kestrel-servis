@@ -1,0 +1,12 @@
+{
+  "verzija": "3.2",
+  "datum": "2026-11-08",
+  "novosti": [
+    "Provjera azuriranja, prijava greske i paket za testere",
+    "HUD izgled, kruzni mjeraci i novi logo",
+    "Domena (Active Directory), debloat, startup menadzer, radni nalog, PDF izvjestaj"
+  ],
+  "skripta": "https://raw.githubusercontent.com/seckestrel/kestrel-servis/main/servis.ps1",
+  "sha256": "D997C803DA82402084BD82EF7D14676E1800D25CB8FB7CC7523F0258839C2AF7",
+  "stranica": "https://github.com/seckestrel/kestrel-servis/releases"
+}

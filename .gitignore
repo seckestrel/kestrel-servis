@@ -1,0 +1,15 @@
+# podaci klijenata i lokalne postavke - nikad u repozitorij
+Izvjestaji/
+Servisi/
+Backup/
+Drajveri/
+Programi/
+BugReports/
+postavke.json
+cjenovnik.csv
+*.bak
+*.new
+Alati/*/
+!Alati/LibreHardwareMonitor/
+Alati/LibreHardwareMonitor/*
+!Alati/LibreHardwareMonitor/PROCITAJ.txt

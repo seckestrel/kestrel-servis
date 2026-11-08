@@ -1,0 +1,54 @@
+KESTRELTECH SERVIS TOOLKIT v3.2
+================================
+
+POKRETANJE
+  Dupli klik na Pokreni-Servis.bat (trazi Administrator prava).
+  Prvi put: desni klik na ZIP > Properties > Unblock, pa tek onda raspakuj.
+
+FOLDERI NA USB-u
+  Alati\          portable alati (CrystalDiskInfo, HWiNFO, SDIO...), svaki u svoj podfolder
+  Alati\LibreHardwareMonitor\   raspakuj ovdje LibreHardwareMonitor za tacne temperature
+  Izvjestaji\     svaki rad na racunaru dobije svoj folder (HTML, PDF, TXT, logovi, backup startupa)
+  Servisi\        sesija i kopije izvjestaja po racunaru (za nastavak nakon restarta i historiju)
+  Drajveri\       backup drajvera po modelu racunara
+  Backup\         backup korisnickih podataka
+  Programi\       winget liste programa
+  cjenovnik.csv   tvoj cjenovnik usluga (otvara se u Excelu, kolone: Usluga;Cijena;Kljuc)
+  logo.png        (opcionalno) tvoj logo - pojavljuje se u izvjestaju za klijenta
+
+TOK RADA
+  1. Pokreni alat. Odmah biljezi pocetno stanje racunara (prostor, startup, programi, boot).
+  2. Upisi ime klijenta. Radi servis (ciscenje, startup, debloat, popravke...).
+  3. Ako restartujes racunar, pokreni alat opet i izaberi "Nastaviti servis" -
+     tako izvjestaj pokaze i koliko se brze podize sistem.
+  4. Radni nalog > "Predlozi iz uradjenih koraka" > provjeri cijene > Sacuvaj.
+  5. Izvjestaj za klijenta (PDF) - prije/poslije, uradjeno, nalog, nalazi, potpisi.
+
+CJENOVNIK - kolona Kljuc
+  Povezuje uslugu sa korakom u alatu (za automatski prijedlog na nalogu):
+  diag, repair, chkdsk, wureset, cleanup, startup, debloat, uninstall, security,
+  userbackup, drvbackup, drvrestore, wgupdate, wgstd, network, stress, restore, bitlocker, domain
+  Vise kljuceva odvoji zarezom. Prazno = dodajes rucno.
+
+PODACI FIRME
+  Adresa, telefon, email i valuta se mijenjaju na vrhu servis.ps1 (Notepad).
+
+O ALATU (dugmad u meniju)
+  Provjeri azuriranje        - provjeri ima li nove verzije i instalira je (radi i sam pri pokretanju)
+  Prijavi gresku             - ZIP sa opisom, verzijom, podacima o sistemu i logom (bez lozinki i klijenata)
+  Paket za testere / objavu  - na Desktopu napravi folder Kestrel-Objava_vX.X sa:
+                               * Kestrel-Servis_vX.X.zip  -> ovo saljes testerima (bez podataka klijenata)
+                               * servis.ps1 + verzija.json -> ovo postavis online za azuriranje
+
+KAKO PODESITI AZURIRANJE (jednom)
+  1. Napravi besplatan GitHub nalog i javni repozitorij, npr. "kestrel-servis"
+     (ili koristi svoj sajt - bilo koji HTTPS link radi).
+  2. Na vrhu servis.ps1 upisi:
+       $UpdateUrl = 'https://raw.githubusercontent.com/KORISNIK/kestrel-servis/main/verzija.json'
+  3. Za svaku novu verziju:
+       a) povecaj $Verzija na vrhu servis.ps1 (npr. 3.2 -> 3.3)
+       b) pokreni alat > O ALATU > Paket za testere / objavu
+       c) u verzija.json upisi novosti
+       d) uploaduj servis.ps1 i verzija.json u repozitorij (Add file > Upload files)
+  Alat provjerava SHA256 - ako fajl nije identican objavljenom, azuriranje se odbija.
+  Stara verzija se uvijek cuva kao servis.ps1.bak.
