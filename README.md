@@ -8,7 +8,7 @@
 
 ## Pokretanje
 
-1. Preuzmi najnoviji ZIP sa stranice **[Releases](../../releases)** (ili *Code → Download ZIP*).
+1. Preuzmi **[Kestrel-Servis_v3.2.zip](https://github.com/seckestrel/kestrel-servis/raw/main/preuzmi/Kestrel-Servis_v3.2.zip)** (alat + LibreHardwareMonitor, spremno za USB).
 2. Desni klik na ZIP → **Properties** → oznaci **Unblock** → OK, pa raspakuj (najbolje na USB).
 3. Dupli klik na **`Pokreni-Servis.bat`** (trazi Administrator prava).
 
